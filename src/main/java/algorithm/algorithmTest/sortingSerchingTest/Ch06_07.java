@@ -20,5 +20,7 @@ public class Ch06_07 {
         }
 
 
+        kb.close();
     }
+
 }
