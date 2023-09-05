@@ -18,12 +18,21 @@ public class Ch07_05 {
     45번줄 호출 4 -> 2 -> 5
     46번줄
     root 1
-    45 번줄 4 -> 2-> 1
+    45 번줄 4 -> 2-> 5-> 1
     rt, lt 데이터 정보 :  6 , 위치정보 :  44
     43 번
     46
-     4 -> 2-> 1 -> 6
+     4 -> 2-> 5 -> 1
     rt, rt 데이터 정보 : 7, 위치정보 : 59
+
+    출력
+    lt
+    rt
+    순서 이면
+    node 출력  데이터 정보 : 1 , 위치정보
+     lt
+     lt lt
+     lt rt
      */
 
 
@@ -54,8 +63,8 @@ public class Ch07_05 {
     private void DFS(Node root) {
         if(root == null) return;
         else {
-            DFS(root.lt);
             System.out.print(root.date + " ");
+            DFS(root.lt);
             DFS(root.rt);
         }
     }
